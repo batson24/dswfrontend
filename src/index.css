@@ -1,0 +1,266 @@
+/* @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800'); */
+
+* {
+  box-sizing: border-box;
+}
+.background {
+   background-image: url('./image/background.JPG');  
+  opacity: .6;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 600px;
+  margin: 300px auto;
+  margin-left:-850px;
+  background: #d1cfd1;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+  opacity:.8 ;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+
+
+
+
+
+
+/*-----------Login-----------------*/
+.login{
+  width:400px;
+  height:400px;
+  background-color: bisque
+}
+/*---------navbar----*/
+.navbar{
+  background-color: rgb(248, 248, 248);
+  
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 0; */
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 30px;
+}
+.logoutButton{
+  display: flex;
+  align-items: flex-end;
+  padding-left: 700px;
+}
+.brand{
+  width:400px;
+  height: 400px
+}
+.navbar{
+  background-color: rgb(209, 192, 195)
+
+}
+
+.nav{
+  display: absolute;
+  width: 230%;
+  height:130px;
+  background-color: rgb(233, 232, 232);
+  opacity: .4;
+}
+.newnav{
+  margin-top: 200px;
+  margin-left:10px;
+  width: 360px;
+  height:1300px;
+  background-color: rgb(233, 232, 232);
+  opacity: .6;
+
+}
+
+/******----------*/
+
+
+/*------user login style-----*/
+.userbackground{
+  background-color:rgb(240, 236, 236);
+  opacity:.2;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+ 
+}
+.profilepic{
+  width:300px;
+  height:200px;
+  background-color: rgb(17, 17, 17); 
+}
+
+
+/*----------Profile and Timeline*/
+body{
+  background: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width:5000px;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+}
+.holder{
+  background:black;
+  border-radius: 10px; 
+  padding: 40px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  align-items: center;
+}
+
+.social-box .box{
+  background: #FFF;
+  border-radius: 10px; 
+  padding: 40px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.social-box  .box:hover{
+ box-shadow: 0 0 6px #4183D7;
+}
+
+.social-box .box .box-text{
+  margin:20px 0px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.social-box .box .box-btn a{
+  text-decoration: none;
+  color: #4183D7;
+  font-size: 16px;
+}
+
+.fa{
+   color:#4183D7;
+}
+
+/*****8---------Timeline*/
+
+
+
+/*-------------Profile, rows affect'timeline, profile,speed*/
+.row1{
+  grid-column-gap: 600px;
+  margin-bottom: 200px;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.row3{
+  margin-top: 200px;
+  grid-column-gap: 300px;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.social-box .view{
+  background: #FFF;
+  border-radius: 50px; 
+  padding: 200px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  
+  
+}
+ .view:hover{
+  box-shadow: 0 0 6px #4183D7;
+ }
+/*------------I want you*/
+.row11{
+  grid-column-gap: 500px;
+  margin-top: 400px;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#boximage{
+  width:300px;
+  height:700px;
+}
+
+
+/*-------video--------*/
+.partner{
+  display: inline;
+}
+
