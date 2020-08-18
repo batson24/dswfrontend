@@ -249,9 +249,9 @@ function Socketpeer() {
          </div>
     </div>
 
-    
+    </SRLWrapper>
 </div>
-   </SRLWrapper>
+   
     </div>
   )
 }

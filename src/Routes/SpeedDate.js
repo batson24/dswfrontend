@@ -86,7 +86,7 @@ let SpeedDate= (props)=>{
                        </div>
                        <div className="box-text">
                            <span>
-                               <StreamApp
+                               {/* <StreamApp
                                 apiKey="du8he7epvp94"
                                 appId="45206"
                                 token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YWNkNzYtOWNhZC00ZTFiLWI0ZTQtMTRiMmI4OGVmM2ZjIn0.9fYJ_FQrPqypH7cIWjgUEq-tPZsgVzVXOxg0eQ62b5A">
@@ -96,7 +96,7 @@ let SpeedDate= (props)=>{
                                <NotificationDropdown className='timeline' notify />
                                
                                
-                               </StreamApp>
+                               </StreamApp> */}
                                </span>
                        </div>
                        <div className="box-btn">

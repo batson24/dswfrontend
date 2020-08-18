@@ -57,8 +57,8 @@ let Chat=({location})=>{
        <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
       
 
-           {/* <input value={message} onChange={(event)=> setMessage(event.target.value)}
-           onKeyPress={event=> event.key === 'Enter'? sendMessage(event): null}/> */}
+            <input value={message} onChange={(event)=> setMessage(event.target.value)}
+           onKeyPress={event=> event.key === 'Enter'? sendMessage(event): null}/> 
 
        </div> 
            <TextContainer users={users}/>

@@ -33,7 +33,6 @@ class App extends React.Component{
       LoginPassword: '',
       NewUsername: '',
       NewPassword: '',
-      email: '', 
       NewFirstname:'',
       NewLastname:'',
 
@@ -81,6 +80,9 @@ class App extends React.Component{
             method: 'POST',
             body: JSON.stringify({
                 username: data.username,
+                password: data.password,
+                firstname: data.firstname,
+                lastname:data.lastname
             }),
             headers: {
                 'Content-Type': 'application/json',
@@ -93,7 +95,6 @@ class App extends React.Component{
           LoginPassword: '',
           NewUsername: '',
           NewPassword: '',
-          email: '', 
           NewFirstname:'',
           NewLastname:''
         });
@@ -174,11 +175,11 @@ class App extends React.Component{
          <Switch>  
         
           
-          {/* <Route exact path='/' 
+           {/* <Route exact path='/' 
           render={ () =>
           <Profile  username = {this.state.username}
             />
-             } /> */}
+             } />  */}
 
 <Route exact path='/timeline' 
           render={ () =>
