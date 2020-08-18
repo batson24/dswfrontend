@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import io from "socket.io-client";
 import Peer from "simple-peer";
 import styled from "styled-components";
+import {SRLWrapper} from "simple-react-lightbox";
 
 // const Container = styled.div`
 //   height: 100vh;
@@ -140,6 +141,7 @@ function Socketpeer() {
   return (
 <div>
     <div className="row1">
+      <SRLWrapper>
                          
     <div className="col-lg-4 col-xs-12 text-center">
         <div className='view'>
@@ -249,7 +251,7 @@ function Socketpeer() {
 
     
 </div>
-   
+   </SRLWrapper>
     </div>
   )
 }

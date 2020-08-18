@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import io from "socket.io-client";
 import Carousel from 'react-bootstrap/Carousel'  
-
+import {SRLWrapper} from "simple-react-lightbox";
 import { StreamApp, NotificationDropdown, FlatFeed, Activity, LikeButton, CommentField,CommentList, StatusUpdateForm, Dropdown, Link, ActivityFooter, CommentItem } from 'react-activity-feed';
 import Grid from '@material-ui/core/Grid';
 
@@ -126,7 +126,7 @@ const Room = (props) => {
     return (
 
         <div className="social-box">
-                    
+                    <SRLWrapper>
                 
                      <div className="row1">
                          
@@ -138,7 +138,7 @@ const Room = (props) => {
                                     </div>
                                    
                                     <div className="box-text">
-                                    <span> <video className='partner' width='300px' autoPlay ref={partnerVideo} /></span> 
+                                    {/* <span> <video className='partner' width='300px' autoPlay ref={partnerVideo} /></span>  */}
                                     <span>  <video width='300px' autoPlay ref={userVideo} />
                                      
                              </span>
@@ -157,7 +157,7 @@ const Room = (props) => {
                        </div>
                        <div className="box-text">
                            <span>
-                               <StreamApp
+                               {/* <StreamApp
                                 apiKey="du8he7epvp94"
                                 appId="45206"
                                 token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YWNkNzYtOWNhZC00ZTFiLWI0ZTQtMTRiMmI4OGVmM2ZjIn0.9fYJ_FQrPqypH7cIWjgUEq-tPZsgVzVXOxg0eQ62b5A">
@@ -167,7 +167,7 @@ const Room = (props) => {
                                <NotificationDropdown className='timeline' notify />
                                
                                
-                               </StreamApp>
+                               </StreamApp> */}
                                </span>
                        </div>
                        <div className="box-btn">
@@ -195,7 +195,9 @@ const Room = (props) => {
                           <div className="row title" style={{ marginBottom: "20px" }} >
                                  </div></div>  
 
-                         <div className='container-fluid' >     <Carousel   style={{'width':'550px'}}>  
+                         <div className='container-fluid' >    
+                         
+                          {/* <Carousel   style={{'width':'550px'}}>  
                         
 
                                  <Carousel.Item style={{'height':"350px"}}>  
@@ -247,7 +249,7 @@ const Room = (props) => {
                                           
 
 
-                                        </Carousel>  
+                                        </Carousel>   */}
 
                                 </div>  
 
@@ -271,14 +273,14 @@ const Room = (props) => {
                            <h3>Facebook</h3>
                        </div>
                        <div className="box-text">
-                           <span> <Grid container spacing={8}>
+                           {/* <span> <Grid container spacing={8}>
             <Grid item xs={8} sm={7}>
              
             </Grid>
             <Grid item xs={6} sm={5}>
              
             </Grid>
-          </Grid></span>
+          </Grid></span> */}
                        </div>
                        <div className="box-btn">
                          
@@ -296,7 +298,7 @@ const Room = (props) => {
                            <h3>Github</h3>
                        </div>
                        <div className="box-text">
-                       <StreamApp
+                       {/* <StreamApp
   apiKey="fpwesm5u2evu"
   appId="64527"
   token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZXhhbXBsZS11c2VyIn0.cM6zFlcQ68qP2LLz-Y6fPeNglfOuwB2aeBUaQild1wg"
@@ -352,7 +354,7 @@ const Room = (props) => {
       );
     }}
   />
-</StreamApp>
+</StreamApp> */}
                        </div>
                        <div className="box-btn">
                           
@@ -362,6 +364,7 @@ const Room = (props) => {
        
                
    </div> 
+   </SRLWrapper>
 </div>
    
             

@@ -6,6 +6,7 @@ import InfoBar from '../../Components/InfoBar/InfoBar.jsx'
 import Input from '../../Components/Input/Input.jsx'
 import MessageList from '../../Components/MessageList.jsx'
 import TextContainer from '../../Components/Textcontainer/TextContainer'
+import {SRLWrapper} from "simple-react-lightbox";
 
 let socket;
 let Chat=({location})=>{
@@ -48,7 +49,7 @@ let Chat=({location})=>{
     return(
    <div className='outerContainer'>
 
-      
+      <SRLWrapper>
        <div className='container'>
 
        <InfoBar room={room}/>
@@ -61,6 +62,7 @@ let Chat=({location})=>{
 
        </div> 
            <TextContainer users={users}/>
+           </SRLWrapper>
    </div>
     )
 }

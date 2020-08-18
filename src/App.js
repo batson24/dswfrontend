@@ -11,7 +11,7 @@ import Inbox from './Components/inbox/Inbox'
 import SpeedDate from './Routes/SpeedDate'
 import Room from './Routes/Room'
  import Chat from './Routes/Chat/Chat'
-
+ import SimpleReactLightbox from "simple-react-lightbox";
  
 
 
@@ -161,6 +161,7 @@ class App extends React.Component{
     return(
       
       <div  >
+        <SimpleReactLightbox>
        
      <> 
        {
@@ -269,6 +270,7 @@ class App extends React.Component{
             
             }
         </>  
+        </SimpleReactLightbox>
           
          </div>
         

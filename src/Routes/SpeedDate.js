@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import {v1 as uuid} from 'uuid'
 import Carousel from 'react-bootstrap/Carousel'  
-
+import {SRLWrapper} from "simple-react-lightbox";
 import { StreamApp, NotificationDropdown, FlatFeed, Activity, LikeButton, CommentField,CommentList, StatusUpdateForm } from 'react-activity-feed';
 import Grid from '@material-ui/core/Grid';
 // import PropTypes from 'prop-types';
@@ -59,7 +59,7 @@ let SpeedDate= (props)=>{
     }
     return(
         <div className="social-box">
-           
+           <SRLWrapper>
                 
          <div className="row1">
             
@@ -227,6 +227,7 @@ let SpeedDate= (props)=>{
        
                
    </div> 
+   </SRLWrapper>
 </div>
         
     )
