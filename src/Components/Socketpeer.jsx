@@ -35,6 +35,9 @@ function Socketpeer() {
   const partnerVideo = useRef();
   const socket = useRef();
 
+  
+
+
   useEffect(() => {
     socket.current = io.connect("/");
     navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(stream => {
@@ -141,7 +144,7 @@ function Socketpeer() {
   return (
 <div>
     <div className="row1">
-      <SRLWrapper>
+      
                          
     <div className="col-lg-4 col-xs-12 text-center">
         <div className='view'>
@@ -249,7 +252,7 @@ function Socketpeer() {
          </div>
     </div>
 
-    </SRLWrapper>
+    
 </div>
    
     </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 // import {Link} from 'react-router-dom'
 // import Card from 'react-bootstrap/Card'
 
@@ -14,7 +15,7 @@ export default class Timeline extends React.Component {
         apiKey="du8he7epvp94"
         appId="45206"
         token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YWNkNzYtOWNhZC00ZTFiLWI0ZTQtMTRiMmI4OGVmM2ZjIn0.9fYJ_FQrPqypH7cIWjgUEq-tPZsgVzVXOxg0eQ62b5A">
-        <NotificationDropdown className='timeline' notify />
+       
         <StatusUpdateForm
           feedGroup="timeline"
           userId="f94c550a-4542-479b-857a-2e4b7dabd2c1" />

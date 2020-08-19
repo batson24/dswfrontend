@@ -5,6 +5,7 @@ import {SRLWrapper} from "simple-react-lightbox";
 import { StreamApp, NotificationDropdown, FlatFeed, Activity, LikeButton, CommentField,CommentList, StatusUpdateForm, Dropdown, Link, ActivityFooter, CommentItem } from 'react-activity-feed';
 import Grid from '@material-ui/core/Grid';
 import '../Components/Timeline/timeline.css'
+import SpeedDate from './SpeedDate'
 // import PropTypes from 'prop-types';
 
 // import Scream from '../components/scream/Scream';
@@ -15,7 +16,6 @@ import '../Components/Timeline/timeline.css'
 // import { getScreams } from '../redux/actions/dataActions';
 
 import { makeStyles } from '@material-ui/core/styles'
-import { render } from 'react-dom';
 
 
 
@@ -54,18 +54,17 @@ const useStyles = makeStyles(theme => ({
 
 
 
-let SpeedDate= (props)=>{
-  
-  function create() {
-    const id = uuid();
-    props.history.push(`/room/${id}`);
-}
-    return (
-      
-      <div className="social-box">
+let Speed= (props)=>{
+    function create() {
+        const id = uuid();
+        props.history.push(`/room/${id}`);
+    }
+
+    return(
+        <div className="social-box">
            
                 
-        <div className="row1">
+         <div className="row1">
             
                <div className="col-lg-4 col-xs-12 text-center">
                    <div className='view'>
@@ -111,7 +110,7 @@ let SpeedDate= (props)=>{
                </div>	 
                </div>
 
-           
+               
                
                    <div className="timline">
                        
@@ -185,27 +184,18 @@ let SpeedDate= (props)=>{
   />
 </StreamApp>
                        </div>
-                 
                        <div className="box-btn">
                           
                        </div>
-                 
                     </div>
-                    
                </div>
-               
        
                
-  </div> 
-  
-   
+   </div> 
    
 </div>
-
-
         
-    );
+    )
 }
 
-
-export default SpeedDate
+export default Speed

@@ -6,12 +6,13 @@ import Signup from './Components/Signup'
 import ForgotPassword from './Components/ForgotPassword'
 import Timeline from './Components/Timeline/Timeline'
 import IWY from './Components/IWY'
- import Speed from './Components/Speed'
+ import Speed from './Routes/Speed.js'
 import Inbox from './Components/inbox/Inbox'
 import SpeedDate from './Routes/SpeedDate'
 import Room from './Routes/Room'
  import Chat from './Routes/Chat/Chat'
  import SimpleReactLightbox from "simple-react-lightbox";
+ import Profile from './Components/Profile'
  
 
 
@@ -175,11 +176,11 @@ class App extends React.Component{
          <Switch>  
         
           
-           {/* <Route exact path='/' 
+            {/* <Route exact path='/' 
           render={ () =>
           <Profile  username = {this.state.username}
             />
-             } />  */}
+             } />   */}
 
 <Route exact path='/timeline' 
           render={ () =>
@@ -195,7 +196,7 @@ class App extends React.Component{
 
  <Route exact path='/speed' 
           render={ () =>
-          <SpeedDate  username = {this.state.username}
+          <Speed  username = {this.state.username}
             />
              } /> 
               <Route path='/inbox' exact component={Inbox}
