@@ -59,7 +59,7 @@ let SpeedDate= (props)=>{
     }
     return(
         <div className="social-box">
-           <SRLWrapper>
+           
                 
          <div className="row1">
             
@@ -67,10 +67,10 @@ let SpeedDate= (props)=>{
                    <div className='view'>
                        <i className="fa fa-behance fa-3x" aria-hidden="true"></i>
                        <div className="box-title">
-                           <h3>Profile</h3>
+                           <h3>Batson 24</h3>
                        </div>
                        <div className="box-text">
-                       <span><button onClick={create}>Speed Date</button></span>
+                       <span><button onClick={create}>Online</button></span>
                        </div>
                        <div className="box-btn">
                          
@@ -86,7 +86,7 @@ let SpeedDate= (props)=>{
                        </div>
                        <div className="box-text">
                            <span>
-                               {/* <StreamApp
+                                <StreamApp
                                 apiKey="du8he7epvp94"
                                 appId="45206"
                                 token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YWNkNzYtOWNhZC00ZTFiLWI0ZTQtMTRiMmI4OGVmM2ZjIn0.9fYJ_FQrPqypH7cIWjgUEq-tPZsgVzVXOxg0eQ62b5A">
@@ -96,7 +96,7 @@ let SpeedDate= (props)=>{
                                <NotificationDropdown className='timeline' notify />
                                
                                
-                               </StreamApp> */}
+                               </StreamApp> 
                                </span>
                        </div>
                        <div className="box-btn">
@@ -189,7 +189,7 @@ let SpeedDate= (props)=>{
                    <div className="box">
                        <i className="fa fa-facebook fa-3x" aria-hidden="true"></i>
                        <div className="box-title">
-                           <h3>Facebook</h3>
+                          
                        </div>
                        <div className="box-text">
                            <span> <Grid container spacing={8}>
@@ -214,10 +214,36 @@ let SpeedDate= (props)=>{
                    <div className="box">
                        <i className="fa fa-github fa-3x" aria-hidden="true"></i>
                        <div className="box-title">
-                           <h3>Github</h3>
+                          
                        </div>
                        <div className="box-text">
-                           <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                       <StreamApp
+        apiKey="du8he7epvp94"
+        appId="45206"
+        token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YWNkNzYtOWNhZC00ZTFiLWI0ZTQtMTRiMmI4OGVmM2ZjIn0.9fYJ_FQrPqypH7cIWjgUEq-tPZsgVzVXOxg0eQ62b5A">
+        
+       
+
+        <FlatFeed notify
+        options={{reactions: {recent:true} }}
+        Activity={(props) =>
+              <Activity {...props}
+                Footer={() => (
+                  <div style={ {padding: '8px 16px'} }>
+                    <LikeButton {...props} />
+                    <CommentField
+                      activity={props.activity}
+                      onAddReaction={props.onAddReaction} />
+                    <CommentList activityId={props.activity.id} />
+                  </div>
+
+                  
+                )}
+              />
+            }
+          />
+
+      </StreamApp>
                        </div>
                        <div className="box-btn">
                           
@@ -227,7 +253,7 @@ let SpeedDate= (props)=>{
        
                
    </div> 
-   </SRLWrapper>
+   
 </div>
         
     )

@@ -134,7 +134,7 @@ const Room = (props) => {
                                 <div className='view'>
                                     <i className="fa fa-behance fa-3x" aria-hidden="true"></i>
                                     <div className="box-title">
-                                        <h3>Display Name</h3>
+                                        <h3>Batson 24</h3>
                                     </div>
                                    
                                     <div className="box-text">
