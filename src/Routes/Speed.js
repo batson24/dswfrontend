@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+
 import {v1 as uuid} from 'uuid'
 import Carousel from 'react-bootstrap/Carousel'  
 import {SRLWrapper} from "simple-react-lightbox";
@@ -6,6 +6,9 @@ import { StreamApp, NotificationDropdown, FlatFeed, Activity, LikeButton, Commen
 import Grid from '@material-ui/core/Grid';
 import '../Components/Timeline/timeline.css'
 import SpeedDate from './SpeedDate'
+import React, { useRef, useEffect, useState } from "react";
+import io from "socket.io-client";
+ 
 // import PropTypes from 'prop-types';
 
 // import Scream from '../components/scream/Scream';
@@ -55,10 +58,7 @@ const useStyles = makeStyles(theme => ({
 
 
 let Speed= (props)=>{
-    function create() {
-        const id = uuid();
-        props.history.push(`/room/${id}`);
-    }
+ 
 
     return(
         <div className="social-box">
@@ -73,7 +73,9 @@ let Speed= (props)=>{
                            <h3>Batson 24</h3>
                        </div>
                        <div className="box-text">
-                       <span><button onClick={create}>Online</button></span>
+                       {/* <span> <video className='user' width='300px' autoPlay ref={userVideo} /></span>  
+                    <span> <video className='partner' width='300px' autoPlay ref={partnerVideo} /></span>  
+                     */}
                        </div>
                        <div className="box-btn">
                          
@@ -126,63 +128,7 @@ let Speed= (props)=>{
                       
                       
                        <div className="timeline">
-                       <StreamApp
-  apiKey="fpwesm5u2evu"
-  appId="64527"
-  token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZXhhbXBsZS11c2VyIn0.cM6zFlcQ68qP2LLz-Y6fPeNglfOuwB2aeBUaQild1wg"
->
-  
-  <FlatFeed
-    feedGroup="user"
-    options={{ withRecentReactions: true, limit: 10, withOwnChildren: true }}
-    notify
-    Activity={(props) => {
-      const hasSubActivity = Boolean(props.activity.object.object);
-      const activity = hasSubActivity ? props.activity.object : props.activity;
-      const activityProps = props;
-      return (
-        <Activity
-          {...props}
-          activity={activity}
-          HeaderRight={() => (
-            <Dropdown>
-              <div>
-                <Link
-                  onClick={() => {
-                    props.onRemoveActivity(props.activity.id);
-                  }}
-                >
-                  Remove
-                </Link>
-              </div>
-            </Dropdown>
-          )}
-          Footer={() => (
-            <React.Fragment>
-              <ActivityFooter {...props} activity={activity} />
-              <CommentField
-                activity={activity}
-                onAddReaction={props.onAddReaction}
-              />
-              <CommentList
-                activityId={activity.id}
-                activityPath={
-                  hasSubActivity ? [props.activity.id, 'object'] : null
-                }
-                CommentItem={(props) => (
-                  <React.Fragment>
-                    <CommentItem {...props} />
-                    <LikeButton reaction={props.comment} {...activityProps} />
-                  </React.Fragment>
-                )}
-              />
-            </React.Fragment>
-          )}
-        />
-      );
-    }}
-  />
-</StreamApp>
+                      
                        </div>
                        <div className="box-btn">
                           

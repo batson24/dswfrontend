@@ -198,7 +198,11 @@ class App extends React.Component{
           render={ () =>
           <Speed  username = {this.state.username}
             />
+
+            
              } /> 
+
+
               <Route path='/inbox' exact component={Inbox}
       
       />
